@@ -1,0 +1,17 @@
+This repository contains an original LIN rewrite of the scalar FloorDataGas
+(EIP-7623) schedule published in ethereum/go-ethereum.
+
+Upstream:
+  https://github.com/ethereum/go-ethereum
+  tag v1.16.9  commit 95665d5703e1023995a0ff93e4ce9eb77e8a59bd
+  file core/state_transition.go
+  license LGPL-3.0
+
+The go-ethereum library is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This LIN kernel is not a copy of the Go sources. It reimplements the published
+integer schedule with explicit counts and fail-closed overflow. Proofs live in
+https://github.com/kbelludoo/lin-open
